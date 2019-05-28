@@ -24,16 +24,17 @@
     text-decoration-line: underline;
   }
 
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
-  }
-
   .card > h1 {
     padding: 0;
     margin: 0;
     color: black;
+    font-size: 4em;
+  }
+
+  @media (max-width: 620px) {
+    .card > h1 {
+      font-size: 3em;
+    }
   }
 
   .about {
@@ -69,7 +70,6 @@
 <h1>About</h1>
 
 <div class="about">
-
   <div>
     <h1>Me</h1>
     <ul>

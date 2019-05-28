@@ -26,10 +26,8 @@
     text-decoration-line: underline;
   }
 
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
+  h1 {
+    font-size: 4em;
   }
 
   .main-split {
@@ -40,24 +38,31 @@
     background-color: whitesmoke;
   }
 
+  @media (max-width: 1200px) {
+    .main-split {
+      flex-direction: column;
+    }
+  }
+
   .info-split {
     flex: 1;
     background-color: salmon;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr minmax(350px, auto) 1fr;
+    grid-template-columns: 1fr minmax(250px, 550px) 1fr;
     grid-template-areas: ". . ." ". card ." ". . .";
   }
 
   .nav-split {
     flex: 1;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr minmax(100px, 350px) 1fr;
+    grid-template-columns: 1fr minmax(250px, 550px) 1fr;
     grid-template-areas: ". . ." ". card ." ". . .";
   }
 
   .card {
+    flex: 1;
     grid-area: card;
     background-color: salmon;
     box-shadow: 1px 1px 3px black;
@@ -82,6 +87,33 @@
   .info-split > .card:hover {
     box-shadow: 3px 10px 10px rgba(50, 50, 50, 0.4);
     transform: translateY(-8px);
+  }
+
+  @media (max-width: 620px) {
+    .info-split,
+    .nav-split {
+      display: flex;
+    }
+
+    .nav-split {
+      flex: 0.1;
+    }
+
+    .card:hover {
+      transform: none;
+    }
+
+    .card {
+      border: 0;
+    }
+
+    .info-split > .card {
+      justify-content: flex-start;
+    }
+
+    .info-split > .card:hover {
+      transform: none;
+    }
   }
 </style>
 
