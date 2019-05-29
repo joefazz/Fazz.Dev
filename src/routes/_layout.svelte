@@ -38,12 +38,6 @@
     background-color: whitesmoke;
   }
 
-  @media (max-width: 1200px) {
-    .main-split {
-      flex-direction: column;
-    }
-  }
-
   .info-split {
     flex: 1;
     background-color: salmon;
@@ -89,7 +83,45 @@
     transform: translateY(-8px);
   }
 
+  @media (max-width: 1200px) {
+    .nav-split {
+      flex: 0.1;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .info-split {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .nav-split > .card {
+      border-right: 2px solid black;
+      justify-content: space-evenly;
+    }
+
+    .card:hover {
+      transform: none;
+    }
+
+    .info-split > .card:hover {
+      transform: none;
+    }
+
+    .card {
+      border: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
   @media (max-width: 620px) {
+    .main-split {
+      flex-direction: column;
+    }
+
     .info-split,
     .nav-split {
       display: flex;
@@ -97,22 +129,28 @@
 
     .nav-split {
       flex: 0.1;
+      flex-direction: row;
     }
 
-    .card:hover {
-      transform: none;
-    }
-
-    .card {
+    .nav-split > .card {
+      height: 200px;
       border: 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    a {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 0.8rem;
     }
 
     .info-split > .card {
       justify-content: flex-start;
-    }
-
-    .info-split > .card:hover {
-      transform: none;
     }
   }
 </style>
