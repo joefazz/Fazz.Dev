@@ -7,6 +7,7 @@
 
   .nav-split a {
     color: black;
+    padding: 0;
   }
 
   ul {
@@ -16,6 +17,11 @@
 
   li {
     font-size: 1.8em;
+  }
+
+  li > span {
+    display: inline-block;
+    min-width: 40px;
   }
 
   li > a {
@@ -45,6 +51,7 @@
     grid-template-rows: 1fr minmax(350px, auto) 1fr;
     grid-template-columns: 1fr minmax(250px, 550px) 1fr;
     grid-template-areas: ". . ." ". card ." ". . .";
+    padding: 50px 0 50px 0;
   }
 
   .nav-split {
@@ -57,21 +64,23 @@
 
   .card {
     flex: 1;
+    overflow: hidden;
     grid-area: card;
     background-color: salmon;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: -8px 8px 0px 0px black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0 10px;
     border: 2px solid black;
-    transition: all 0.2s ease-out;
+    transition: all 0.4s ease-out;
+    padding: 0 10px;
+    padding-right: 0;
   }
-
+  
   .card:hover {
-    box-shadow: 3px 10px 10px darkgray;
-    transform: translateY(-8px);
+    box-shadow: -10px 15px 10px darkgrey;
+    transform: translate(6px,-6px);
   }
 
   .info-split > .card {
@@ -79,8 +88,16 @@
   }
 
   .info-split > .card:hover {
-    box-shadow: 3px 10px 10px rgba(50, 50, 50, 0.4);
-    transform: translateY(-8px);
+    box-shadow: -10px 15px 10px rgba(50, 50, 50, 0.4);
+  }
+
+  .card > :global(*) {
+    padding: 0 10px;
+  }
+
+  .card > :global(article) {
+    overflow-y: scroll;
+    padding-right: 0
   }
 
   @media (max-width: 1200px) {
@@ -95,6 +112,12 @@
       display: flex;
       flex-direction: column;
       align-items: stretch;
+      padding: 0 0;
+    }
+
+    .info-split > .card {
+      padding: 0 10px;
+      padding-right: 0;
     }
 
     .nav-split > .card {
@@ -104,14 +127,17 @@
 
     .card:hover {
       transform: none;
+      box-shadow: none;
     }
 
     .info-split > .card:hover {
       transform: none;
+      box-shadow: none;
     }
 
     .card {
       border: 0;
+      box-shadow: none;
       align-items: flex-start;
       justify-content: flex-start;
     }
@@ -120,6 +146,7 @@
   @media (max-width: 620px) {
     .main-split {
       flex-direction: column;
+      width: 100%;
     }
 
     .info-split,
@@ -135,6 +162,10 @@
     .nav-split > .card {
       height: 200px;
       border: 0;
+    }
+
+    .card > :global(article) {
+      overflow: hidden;
     }
 
     h1 {
@@ -164,13 +195,13 @@
         </a>
         <ul>
           <li>
-            📰
+            <span>📰</span>
             <a href="blog">
               <code>Blog</code>
             </a>
           </li>
           <li>
-            👷
+            <span>👷</span>
             <a href="projects">
               <code>Projects</code>
             </a>

@@ -1,8 +1,4 @@
 <style>
-  article {
-    height: 100%;
-  }
-
   code {
     padding: 0;
   }

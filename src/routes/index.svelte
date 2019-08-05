@@ -38,6 +38,7 @@
   }
 
   .about {
+    padding: 0;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
