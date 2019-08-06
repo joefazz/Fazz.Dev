@@ -75,7 +75,7 @@
     border: 2px solid black;
     transition: all 0.2s ease-out;
     padding: 0 10px;
-    padding-right: 0;
+    padding-right: 1px;
   }
   
   .card:hover {
@@ -117,7 +117,7 @@
 
     .info-split > .card {
       padding: 0 10px;
-      padding-right: 0;
+      padding-right: 1px;
     }
 
     .nav-split > .card {
