@@ -73,7 +73,7 @@
     align-items: flex-start;
     justify-content: space-between;
     border: 2px solid black;
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
     padding: 0 10px;
     padding-right: 0;
   }
