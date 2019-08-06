@@ -16,6 +16,22 @@
   ul {
     margin: 0 0 1em 0;
     line-height: 1.5;
+    list-style: none;
+  }
+
+  li {
+    padding: 5px 0;
+  }
+
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: grey;
   }
 </style>
 
@@ -33,6 +49,7 @@
 				waiting for the 'click' event -->
     <li>
       <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+      <p>{post.description}</p>
     </li>
   {/each}
 </ul>

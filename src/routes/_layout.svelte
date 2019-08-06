@@ -123,6 +123,7 @@
     .nav-split > .card {
       border-right: 2px solid black;
       justify-content: space-evenly;
+      padding: 0 10px;
     }
 
     .card:hover {

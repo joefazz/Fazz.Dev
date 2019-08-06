@@ -8,10 +8,11 @@
 // underscore tells Sapper not to do that.
 
 const posts = [
-	{
-		title: 'What is Sapper?',
-		slug: 'what-is-sapper',
-		html: `
+    {
+        title: 'What is Sapper?',
+        slug: 'what-is-sapper',
+        description: 'A brief introduction to the Sapper development framework.',
+        markdown: `
 			<p>First, you have to know what <a href='https://svelte.dev'>Svelte</a> is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the <a href='https://svelte.dev/blog/frameworks-without-the-framework'>introductory blog post</a>, you should!</p>
 
 			<p>Sapper is a Next.js-style framework (<a href='blog/how-is-sapper-different-from-next'>more on that here</a>) built around Svelte. It makes it embarrassingly easy to create extremely high performance web apps. Out of the box, you get:</p>
@@ -25,46 +26,46 @@ const posts = [
 
 			<p>It's implemented as Express middleware. Everything is set up and waiting for you to get started, but you keep complete control over the server, service worker, webpack config and everything else, so it's as flexible as you need it to be.</p>
 		`
-	},
+    },
 
-	{
-		title: 'How to use Sapper',
-		slug: 'how-to-use-sapper',
-		html: `
-			<h2>Step one</h2>
-			<p>Create a new project, using <a href='https://github.com/Rich-Harris/degit'>degit</a>:</p>
+    {
+        title: 'How to use Sapper',
+        slug: 'how-to-use-sapper',
+        description: 'A brief introduction to the Sapper development framework.',
+		markdown: `## Step one
+			\nCreate a new project, using [degit](https://github.com/Rich-Harris/degit)
+			\n\`\`\`npx degit sveltejs/sapper-template#rollup my-app\
+			\ncd my-app
+			\nnpm install # or yarn!
+			\nnpm run dev
+			\n\`\`\`
+			\n
+			\n## Step two
+			\nGo to [localhost](http://localhost:3000). Open \`my-app\` in your editor. Edit the files in the \`src/routes\` directory or add new ones.
+			\n
+			\n## Step three
+			\n...
+			\n
+			\n## Step four
+			\nResist overdone joke formats.`
+    },
 
-			<pre><code>npx degit sveltejs/sapper-template#rollup my-app
-			cd my-app
-			npm install # or yarn!
-			npm run dev
-			</code></pre>
-
-			<h2>Step two</h2>
-			<p>Go to <a href='http://localhost:3000'>localhost:3000</a>. Open <code>my-app</code> in your editor. Edit the files in the <code>src/routes</code> directory or add new ones.</p>
-
-			<h2>Step three</h2>
-			<p>...</p>
-
-			<h2>Step four</h2>
-			<p>Resist overdone joke formats.</p>
-		`
-	},
-
-	{
-		title: 'Why the name?',
-		slug: 'why-the-name',
-		html: `
+    {
+        title: 'Why the name?',
+        slug: 'why-the-name',
+        description: 'A brief introduction to the Sapper development framework.',
+        markdown: `
 			<p>In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as <em>sappers</em>.</p>
 
 			<p>For web developers, the stakes are generally lower than those for combat engineers. But we face our own hostile environment: underpowered devices, poor network connections, and the complexity inherent in front-end engineering. Sapper, which is short for <strong>S</strong>velte <strong>app</strong> mak<strong>er</strong>, is your courageous and dutiful ally.</p>
 		`
-	},
+    },
 
-	{
-		title: 'How is Sapper different from Next.js?',
-		slug: 'how-is-sapper-different-from-next',
-		html: `
+    {
+        title: 'How is Sapper different from Next.js?',
+        slug: 'how-is-sapper-different-from-next',
+        description: 'A brief introduction to the Sapper development framework.',
+        markdown: `
 			<p><a href='https://github.com/zeit/next.js'>Next.js</a> is a React framework from <a href='https://zeit.co'>Zeit</a>, and is the inspiration for Sapper. There are a few notable differences, however:</p>
 
 			<ul>
@@ -74,19 +75,20 @@ const posts = [
 				<li>Links are just <code>&lt;a&gt;</code> elements, rather than framework-specific <code>&lt;Link&gt;</code> components. That means, for example, that <a href='blog/how-can-i-get-involved'>this link right here</a>, despite being inside a blob of HTML, works with the router as you'd expect.</li>
 			</ul>
 		`
-	},
+    },
 
-	{
-		title: 'How can I get involved?',
-		slug: 'how-can-i-get-involved',
-		html: `
+    {
+        title: 'How can I get involved?',
+        slug: 'how-can-i-get-involved',
+        description: 'A brief introduction to the Sapper development framework.',
+        markdown: `
 			<p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>
 		`
-	}
+    }
 ];
 
 posts.forEach(post => {
-	post.html = post.html.replace(/^\t{3}/gm, '');
+	post.markdown = post.markdown.replace('', '');
 });
 
 export default posts;
