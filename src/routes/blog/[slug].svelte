@@ -14,7 +14,6 @@
 </script>
 
 <script>
-	import marked from 'marked';
 	export let post;
 </script>
 
@@ -57,11 +56,11 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post.metadata.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{post.metadata.title}</h1>
 
 <div class='content'>
-	{@html marked(post.markdown)}
+	{@html post.html}
 </div>

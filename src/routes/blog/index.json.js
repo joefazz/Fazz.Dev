@@ -1,14 +1,19 @@
-import posts from './_posts.js';
+import { getPosts } from './_posts.js';
 
-const contents = JSON.stringify(posts.map(post => {
-	return {
-		title: post.title,
-		slug: post.slug,
-		description: post.description
-	};
-}));
+let contents;
 
 export function get(req, res) {
+	if (!contents || process.env.NODE_ENV !== 'production') {
+		const posts = getPosts().map(post => ({
+			title: post.metadata.title,
+			slug: post.slug
+		}));
+
+		
+		contents = JSON.stringify(posts);
+	}
+	console.log(contents);
+
 	res.writeHead(200, {
 		'Content-Type': 'application/json'
 	});
