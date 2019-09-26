@@ -1,5 +1,7 @@
 ---
 title: How to use Sapper
+description: No line breaks allowed in the post descriptions noted
+reading_time: 4000
 pubdate: 2018-07-21
 ---
 

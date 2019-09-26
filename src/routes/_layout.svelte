@@ -75,7 +75,6 @@
     border: 2px solid black;
     transition: all 0.2s ease-out;
     padding: 0 10px;
-    padding-right: 1px;
   }
   
   .card:hover {
@@ -117,7 +116,6 @@
 
     .info-split > .card {
       padding: 0 10px;
-      padding-right: 1px;
     }
 
     .nav-split > .card {
@@ -209,7 +207,7 @@
           </li>
         </ul>
 
-        <h4>A Joe Fazzino Production</h4>
+        <h4>A <a href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
       </div>
     </section>
     <section class="info-split">

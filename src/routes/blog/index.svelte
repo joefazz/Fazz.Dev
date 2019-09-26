@@ -3,7 +3,6 @@
     return this.fetch(`blog.json`)
       .then(r => r.json())
       .then(posts => {
-        console.log(posts)
         return { posts };
       }).catch(err => console.log(err));
   }
@@ -18,10 +17,21 @@
     margin: 0 0 1em 0;
     line-height: 1.5;
     list-style: none;
+    padding: 0;
   }
 
   li {
-    padding: 5px 0;
+    padding: 5px 5px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  section {
+    max-width: 70%;
   }
 
   a {
@@ -34,6 +44,19 @@
     font-size: 1rem;
     color: grey;
   }
+
+  .post-list {
+    height: 100%;
+    width: calc(100% - 20px);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .post-description {
+    color: black;
+  }
 </style>
 
 <svelte:head>
@@ -41,16 +64,23 @@
 </svelte:head>
 
 <h1>Recent posts</h1>
-
-<ul>
-  {#each posts as post}
-    <!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
-    <li>
-      <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
-      <p>{post.description}</p>
-    </li>
-  {/each}
-</ul>
+<div class="post-list">
+  <ul>
+    {#each posts as post}
+      <!-- we're using the non-standard `rel=prefetch` attribute to
+          tell Sapper to load the data for the page as soon as
+          the user hovers over the link or taps it, instead of
+          waiting for the 'click' event -->
+      <li>
+        <section>
+          <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+          <p class="post-description">{post.description}</p>
+          <p>{post.pubdate}</p>
+        </section>
+        <section>
+          <p>Reading time: {post.reading_time}</p>
+        </section>
+      </li>
+    {/each}
+  </ul>
+</div>

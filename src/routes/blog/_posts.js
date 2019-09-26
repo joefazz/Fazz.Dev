@@ -6,9 +6,9 @@ export function getPosts() {
 	const slugs = fs.readdirSync('posts')
 		.filter(file => path.extname(file) === '.md')
 		.map(file => file.slice(0, -3));
-	console.log(slugs)
-	return slugs.map(getPost).sort((a, b) => {
-		return a.metadata.pubdate < b.metadata.pubdate ? 1 : -1;
+	
+		return slugs.map(getPost).sort((a, b) => {
+			return a.metadata.pubdate < b.metadata.pubdate ? 1 : -1;
 	});
 }
 

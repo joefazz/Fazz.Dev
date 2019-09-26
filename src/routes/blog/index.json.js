@@ -6,13 +6,15 @@ export function get(req, res) {
 	if (!contents || process.env.NODE_ENV !== 'production') {
 		const posts = getPosts().map(post => ({
 			title: post.metadata.title,
+			description: post.metadata.description,
+			pubdate: post.metadata.pubdate,
+			reading_time: post.metadata.reading_time,
 			slug: post.slug
 		}));
 
 		
 		contents = JSON.stringify(posts);
 	}
-	console.log(contents);
 
 	res.writeHead(200, {
 		'Content-Type': 'application/json'
