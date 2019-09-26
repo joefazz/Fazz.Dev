@@ -4,13 +4,16 @@ let contents;
 
 export function get(req, res) {
 	if (!contents || process.env.NODE_ENV !== 'production') {
-		const posts = getPosts().map(post => ({
-			title: post.metadata.title,
-			description: post.metadata.description,
-			pubdate: post.metadata.pubdate,
-			reading_time: post.metadata.reading_time,
-			slug: post.slug
-		}));
+		const posts = getPosts()
+			.filter(post => post.metadata.published === 'true')
+			.sort((a, b) => new Date(b.metadata.pubdate) - new Date(a.metadata.pubdate))
+			.map(post => ({
+				title: post.metadata.title,
+				description: post.metadata.description,
+				tags: post.metadata.tags,
+				pubdate: post.metadata.pubdate,
+				slug: post.slug
+			}));
 
 		
 		contents = JSON.stringify(posts);

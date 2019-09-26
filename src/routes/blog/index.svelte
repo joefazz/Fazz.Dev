@@ -25,13 +25,8 @@
     border: 2px solid black;
     background-color: white;
     border-radius: 0px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-  }
-
-  section {
-    max-width: 70%;
+    margin-bottom: 20px;
   }
 
   a {
@@ -72,14 +67,9 @@
           the user hovers over the link or taps it, instead of
           waiting for the 'click' event -->
       <li>
-        <section>
-          <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
-          <p class="post-description">{post.description}</p>
-          <p>{post.pubdate}</p>
-        </section>
-        <section>
-          <p>Reading time: {post.reading_time}</p>
-        </section>
+        <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+        <p class="post-description">{post.description}</p>
+        <p>{post.pubdate}</p>
       </li>
     {/each}
   </ul>
