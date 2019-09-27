@@ -26,6 +26,17 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
+	h1 {
+		padding: 0 10px;
+		text-decoration: underline;
+		text-align: center;
+	}
+
+	.content {
+		margin-bottom: 2px;
+		max-width: 100%;
+	}
+
 	.content :global(h2) {
 		font-size: 1.4em;
 		font-weight: 500;
@@ -53,6 +64,19 @@
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
 	}
+
+	.content :global(p) {
+		font-size: 1.1rem;
+	}
+
+	.content :global(img) {
+		max-width: 100%;
+	}
+
+	.content :global(blockquote) {
+		font-weight: bold;
+		font-style: italic
+	}
 </style>
 
 <svelte:head>
@@ -61,6 +85,6 @@
 
 <h1>{post.metadata.title}</h1>
 
-<div class='content'>
+<article class='content'>
 	{@html post.html}
-</div>
+</article>

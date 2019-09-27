@@ -15,7 +15,7 @@ With all these new tools, there is always a learning experience for beginners th
 
 > "What is the best way to learn [INSERT TECH HERE]?"
 
-### The Problem
+## The Problem
 
 I recently read a thread on a forum on the best way to learn React Native, a technology I am very familiar with. There were a couple of answers which instructed the wannabe cross platform developer to "Learn modern JavaScript before you start React Native". This sounds like a very common sense answer, React Native is written with JavaScript (for the most part) so good knowledge of the foundations will lead to you being a better React Native developer. However, I was learning React Native about 15 months ago and went straight in with no prior JavaScript knowledge at all. I had done some Android development in Java but that was pretty much as far as it went.
 
@@ -23,7 +23,7 @@ I didn't know it then but this was absolutely 100% the correct way for me to tea
 
 For me, the best way to learn something new is to just jump into it and then I figure out things as I go. Most recently, I'm teaching myself Go for my big final project at University and I wanted to split my code into multiple files/folders but Go is not like JavaScript, where you just stick `export` in front of the function you want to access from somewhere else. It turns out you have to capitalise the first letter of the function. That may seem like something you'd learn in the first few pages of a book but now I know for certain that I won't forget how to export a function in Go.
 
-### The Point
+## The Point
 
 Only one person knows the best way for you to pick up a new skill... __You!__
 

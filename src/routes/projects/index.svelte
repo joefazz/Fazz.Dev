@@ -1,8 +1,11 @@
 <style>
+  .card > h1, p, ul {
+    padding: 0 10px;
+  }
+
   ul {
     height: 100%;
     list-style: none;
-    padding: 0;
   }
 
   li {

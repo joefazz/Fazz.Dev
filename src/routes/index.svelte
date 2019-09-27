@@ -25,7 +25,7 @@
   }
 
   .card > h1 {
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
     color: black;
     font-size: 4em;
@@ -38,7 +38,7 @@
   }
 
   .about {
-    padding: 0;
+    padding: 0 10px;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -68,7 +68,7 @@
   <title>Fazz.Dev</title>
 </svelte:head>
 
-<h1>About</h1>
+<h1 class="heading">About</h1>
 
 <div class="about">
   <div>

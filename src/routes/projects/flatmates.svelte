@@ -1,10 +1,15 @@
 <style>
   article {
     height: 100%;
+    margin-bottom: 5px;
   }
 
   code {
     padding: 0;
+  }
+  
+  h1 {
+    padding: 0 10px;
   }
 
   img {

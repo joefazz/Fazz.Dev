@@ -40,6 +40,10 @@
     color: grey;
   }
 
+   h1 {
+     padding: 0 10px;
+   }
+
   .post-list {
     height: 100%;
     width: calc(100% - 20px);
@@ -47,6 +51,10 @@
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+  }
+
+  .post-list > ul {
+    margin: 0;
   }
 
   .post-description {

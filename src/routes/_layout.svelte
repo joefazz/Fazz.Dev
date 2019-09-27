@@ -74,7 +74,7 @@
     justify-content: space-between;
     border: 2px solid black;
     transition: all 0.2s ease-out;
-    padding: 0 10px;
+    padding: 0 10px;  
   }
   
   .card:hover {
@@ -84,19 +84,16 @@
 
   .info-split > .card {
     background-color: whitesmoke;
+    padding: 0;
   }
 
   .info-split > .card:hover {
     box-shadow: -10px 15px 10px rgba(50, 50, 50, 0.4);
   }
 
-  .card > :global(*) {
-    padding: 0 10px;
-  }
-
   .card > :global(article) {
     overflow-y: scroll;
-    padding-right: 0
+    padding: 10px;
   }
 
   @media (max-width: 1200px) {
