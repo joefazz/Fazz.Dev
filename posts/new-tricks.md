@@ -8,7 +8,7 @@ pubdate: 2019-09-27
 
 Long time readers will know that this blog lived under a different domain and a different stack. When I first decided that I wanted to try doing a blog I was all in on React Native. It was my full time job, I had a [side project I was working on until 2am every night on](/projects/flatmates) and I wanted to start going a bit deeper into the world wide web aspect of React so I thought a Gatsby blog would be a good place to start.
 
-Here I am now almost a year later (10 months to be exact) and I'm a full time web developer after finishing my degree in Computer Science. I don't work with React anymore, although I still like it a lot [see here](https://github.com/joefazz/codexe), I work with Angular every day now which is an entertaining turn of events if you think about it for long enough which I try not to. Seeing as I've accidently ended up working with React, Vue.js and Angular I thought to myself.
+Here I am now almost a year later (10 months to be exact) and I'm a full time web developer after finishing my degree in Computer Science. I don't work with React anymore, although I still like it a lot [see here](https://github.com/joefazz/codexe), I work with Angular every day now which is an entertaining turn of events if you think about it for long enough, which I try not to. Seeing as I've accidently ended up working with React, Vue.js and Angular I thought to myself...
 
 > Why stop there?!
 
@@ -28,4 +28,6 @@ Cons:
 - No TypeScript support but it's being worked on (this isn't a con for me I'm not a big fan)
 - VSCode support is okay but not 10/10
 
-I realise my cons list is me saying "it's new" in 3 different ways but that's deliberate.
+I realise my cons list is me saying "it's new" in 3 different ways but that's my way of showing that so far I've not really experienced what I would consider a technological failing on the part of the framework. This is however my very first project I've used it for and it's only a blog so it's hardly pushing any boundaries or limits although I do prefer the experience of making this blog more than the experience of setting up a Gatsby blog.
+
+I'm going to try and start posting a bit more regularly but try is really the operative word in that sentence.

@@ -156,8 +156,28 @@
     }
 
     .nav-split > .card {
-      height: 200px;
       border: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+       margin-bottom: 4px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-bottom: 3px;
+      margin-left: 10px;
+    }
+
+    span {
+      display: none !important;
     }
 
     .card > :global(article) {
@@ -166,10 +186,7 @@
 
     h1 {
       font-size: 2rem;
-    }
-
-    a {
-      font-size: 1.5rem;
+      margin: 0;
     }
 
     h4 {
@@ -186,25 +203,28 @@
   <div class="main-split">
     <section class="nav-split">
       <div class="card">
-        <a href="/" style="text-decoration: none;">
-          <h1>Fazz.Dev</h1>
-        </a>
-        <ul>
-          <li>
-            <span>📰</span>
-            <a href="blog">
-              <code>Blog</code>
-            </a>
-          </li>
-          <li>
-            <span>👷</span>
-            <a href="projects">
-              <code>Projects</code>
-            </a>
-          </li>
-        </ul>
-
-        <h4>A <a href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
+        <div class="nav-links">
+          <a href="/" style="text-decoration: none;">
+            <h1>Fazz.Dev</h1>
+          </a>
+          <ul>
+            <li>
+              <span>📰</span>
+              <a href="blog">
+                <code>Blog</code>
+              </a>
+            </li>
+            <li>
+              <span>👷</span>
+              <a href="projects">
+                <code>Projects</code>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>A <a href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
+        </div>
       </div>
     </section>
     <section class="info-split">
