@@ -30,6 +30,7 @@
 		padding: 0 10px;
 		text-decoration: underline;
 		text-align: center;
+		margin: 0.5em 0 0.5em 0;
 	}
 
 	.content {

@@ -64,7 +64,7 @@
 
   .card {
     flex: 1;
-    overflow: hidden;
+    overflow-x: hidden;
     grid-area: card;
     background-color: salmon;
     box-shadow: -8px 8px 0px 0px black;
@@ -152,6 +152,7 @@
 
     .nav-split {
       flex: 0.1;
+      min-height: 70px;
       flex-direction: row;
     }
 
@@ -181,7 +182,7 @@
     }
 
     .card > :global(article) {
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     h1 {
@@ -195,6 +196,18 @@
 
     .info-split > .card {
       justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 440px) {
+    li > a {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    li > a {
+      font-size: 1.1rem;
     }
   }
 </style>
