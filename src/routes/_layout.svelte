@@ -32,10 +32,6 @@
     text-decoration-line: underline;
   }
 
-  h1 {
-    font-size: 4em;
-  }
-
   .main-split {
     height: 100vh;
     width: 100vw;
@@ -84,7 +80,6 @@
 
   .info-split > .card {
     background-color: whitesmoke;
-    padding: 0;
   }
 
   .info-split > .card:hover {
@@ -94,6 +89,17 @@
   .card > :global(article) {
     overflow-y: scroll;
     padding: 10px;
+
+		margin-bottom: 10px;
+		max-width: 100%;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px lightgray;
+  }
+
+  :global(.card-title) {
+      font-size: 4em;
+      margin: 0;
   }
 
   @media (max-width: 1200px) {
@@ -108,11 +114,11 @@
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      padding: 0 0;
+      padding: 0;
     }
 
     .info-split > .card {
-      padding: 0 10px;
+      padding: 5px 10px;
     }
 
     .nav-split > .card {
@@ -185,9 +191,8 @@
       overflow-x: hidden;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin: 0;
+    :global(.card-title) {
+      font-size: 2em;
     }
 
     h4 {
@@ -218,7 +223,7 @@
       <div class="card">
         <div class="nav-links">
           <a href="/" style="text-decoration: none;">
-            <h1>Fazz.Dev</h1>
+            <h1 class="card-title">Fazz.Dev</h1>
           </a>
           <ul>
             <li>

@@ -4,7 +4,12 @@
   }
 
   h1 {
-    padding: 0 10px;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .links {
+    text-align: center;
   }
 </style>
 
@@ -47,22 +52,18 @@
     perusing.
   </p>
 
-  <p>
-    <a href="https://github.com/joefazz/Flatmates" target="self">
+  <p class="links">
+    <a href="https://github.com/joefazz/CodeXE" target="self">
       <code>Frontend</code>
     </a>
-  </p>
-  <p>
-    <a href="https://github.com/joefazz/flatmates-prisma" target="self">
+     - 
+     <a href="https://github.com/joefazz/Midgard" target="self">
       <code>Backend</code>
     </a>
-  </p>
-  <p>
-    <a
+     - <a
       href="https://github.com/joefazz/FYP_Report/blob/master/thesis.pdf"
       target="self">
       <code>Dissertation</code>
     </a>
   </p>
-
 </article>

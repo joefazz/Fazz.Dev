@@ -41,16 +41,15 @@
   }
 
    h1 {
-     padding: 0 10px;
+     margin: 0;
    }
 
   .post-list {
     height: 100%;
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
   }
 
   .post-list > ul {
@@ -66,7 +65,7 @@
   <title>Blog | Fazz</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<h1 class="card-title">Recent posts</h1>
 <div class="post-list">
   <ul>
     {#each posts as post}

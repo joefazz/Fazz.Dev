@@ -24,22 +24,7 @@
     text-decoration-line: underline;
   }
 
-  .card > h1 {
-    padding: 0 10px;
-    margin: 0;
-    color: black;
-    font-size: 4em;
-  }
-
-  @media (max-width: 620px) {
-    .card > h1 {
-      font-size: 3em;
-    }
-  }
-
   .about {
-    padding: 0 10px;
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -48,11 +33,11 @@
   }
 
   .about h1 {
-    font-size: 2em;
+    font-size: 1.3em;
   }
 
   .about li {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   .about a {
@@ -68,7 +53,7 @@
   <title>Fazz.Dev</title>
 </svelte:head>
 
-<h1 class="heading">About</h1>
+<h1 class="card-title">About</h1>
 
 <div class="about">
   <div>

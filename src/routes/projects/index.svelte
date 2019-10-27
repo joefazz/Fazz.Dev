@@ -1,10 +1,7 @@
 <style>
-  .card > h1, p, ul {
-    padding: 0 10px;
-  }
-
   ul {
     height: 100%;
+    padding: 0;
     list-style: none;
   }
 
@@ -18,7 +15,7 @@
   <title>Projects | Fazz</title>
 </svelte:head>
 
-<h1>Projects</h1>
+<h1 class="card-title">Projects</h1>
 
 <p>
   Click a project to see information about how it was build, where it lives and

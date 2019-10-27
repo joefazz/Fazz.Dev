@@ -34,7 +34,6 @@
 	}
 
 	.content {
-		margin-bottom: 2px;
 		max-width: 100%;
 	}
 
@@ -53,7 +52,9 @@
 	}
 
 	.content :global(pre) :global(code) {
+		max-width: 20px;
 		background-color: transparent;
+		white-space: pre-wrap;
 		color: black;
 		padding: 0;
 	}
@@ -68,6 +69,7 @@
 
 	.content :global(p) {
 		font-size: 1.1rem;
+		margin-top: 0;
 	}
 
 	.content :global(img) {
