@@ -1,11 +1,3 @@
-<script>
-  let x = 3;
-
-  function handleClick() {
-    x++;
-  }
-</script>
-
 <style>
   ul {
     list-style: none;

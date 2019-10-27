@@ -83,7 +83,7 @@
 </style>
 
 <svelte:head>
-	<title>{post.metadata.title}</title>
+	<title>{post.metadata.title} | Fazz</title>
 </svelte:head>
 
 <h1>{post.metadata.title}</h1>
