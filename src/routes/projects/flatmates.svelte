@@ -49,7 +49,7 @@
 
   <p>Project was decommissioned May 2019 due to costs and lack of usage.</p>
 
-  <p>
+  <p class="links">
     <a href="https://github.com/joefazz/Flatmates" target="self">
       <code>Frontend</code>
     </a> - <a href="https://github.com/joefazz/flatmates-prisma" target="self">
