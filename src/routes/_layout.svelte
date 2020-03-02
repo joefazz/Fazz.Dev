@@ -1,42 +1,25 @@
-<style>
-  main {
-    position: relative;
-    background-color: white;
-    box-sizing: border-box;
-  }
+<script>
+  import Tailwindcss from '../tailwindcss.svelte';
 
+  let isMenuExpanded = false;
+
+function toggleMenu() {
+  isMenuExpanded = !isMenuExpanded;
+}
+</script>
+
+<Tailwindcss />
+
+<style>
   .nav-split a {
     color: black;
     padding: 0;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    font-size: 1.8em;
-  }
-
-  li > span {
-    display: inline-block;
-    min-width: 40px;
-  }
-
-  li > a {
-    text-decoration: none;
-  }
-
-  li > a:hover {
-    text-decoration-line: underline;
   }
 
   .main-split {
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: row;
     background-color: whitesmoke;
   }
 
@@ -59,31 +42,17 @@
   }
 
   .card {
+    @apply flex flex-col justify-between;
     flex: 1;
     overflow-x: hidden;
     grid-area: card;
-    background-color: salmon;
     box-shadow: -8px 8px 0px 0px black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    border: 2px solid black;
     transition: all 0.2s ease-out;
-    padding: 0 10px;  
   }
   
   .card:hover {
-    box-shadow: -10px 15px 10px darkgrey;
+    box-shadow: -10px 15px 10px #121210;
     transform: translate(6px,-6px);
-  }
-
-  .info-split > .card {
-    background-color: whitesmoke;
-  }
-
-  .info-split > .card:hover {
-    box-shadow: -10px 15px 10px rgba(50, 50, 50, 0.4);
   }
 
   .card > :global(article) {
@@ -94,17 +63,12 @@
 		max-width: 100%;
 		background-color: white;
 		border-radius: 5px;
-		box-shadow: 0px 0px 20px lightgray;
-  }
-
-  :global(.card-title) {
-      font-size: 4em;
-      margin: 0;
+		box-shadow: 0px 0px 20px gray;
   }
 
   @media (max-width: 1200px) {
     .nav-split {
-      flex: 0.1;
+      flex: 0.2;
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -117,14 +81,8 @@
       padding: 0;
     }
 
-    .info-split > .card {
-      padding: 5px 10px;
-    }
-
     .nav-split > .card {
-      border-right: 2px solid black;
       justify-content: space-evenly;
-      padding: 0 10px;
     }
 
     .card:hover {
@@ -138,117 +96,75 @@
     }
 
     .card {
-      border: 0;
       box-shadow: none;
       align-items: flex-start;
       justify-content: flex-start;
     }
   }
 
-  @media (max-width: 620px) {
-    .main-split {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .info-split,
+  @media (max-width: 778px) {
     .nav-split {
-      display: flex;
-    }
-
-    .nav-split {
-      flex: 0.1;
+      flex: 0.14;
       min-height: 70px;
       flex-direction: row;
-    }
-
-    .nav-split > .card {
-      border: 0;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-       margin-bottom: 4px;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      margin: 0;
-      margin-bottom: 3px;
-      margin-left: 10px;
-    }
-
-    span {
-      display: none !important;
     }
 
     .card > :global(article) {
       overflow-x: hidden;
     }
-
-    :global(.card-title) {
-      font-size: 2em;
-    }
-
-    h4 {
-      font-size: 0.8rem;
-    }
-
-    .info-split > .card {
-      justify-content: flex-start;
-    }
   }
 
-  @media (max-width: 440px) {
-    li > a {
-      font-size: 1.4rem;
-    }
-  }
-
-  @media (max-width: 320px) {
-    li > a {
-      font-size: 1.1rem;
-    }
-  }
 </style>
 
-<main>
-  <div class="main-split">
-    <section class="nav-split">
-      <div class="card">
-        <div class="nav-links">
+<div class="flex-col main-split sm:flex-row">
+  <section class="nav-split">
+    <div class="px-3 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 bg-theme card">
+      <div class="flex flex-col w-full">
+        <div class="inline-flex items-center justify-between">
           <a href="/" style="text-decoration: none;">
-            <h1 class="card-title">Fazz.Dev</h1>
+            <h1 class="text-4xl font-bold md:text-6xl">Fazz.Dev</h1>
           </a>
-          <ul>
-            <li>
+          <button class="p-1 text-3xl border-2 border-black border-solid rounded cursor-pointer sm:hidden" on:click={toggleMenu}><img class="w-5" src="/hamburger.png" alt=""></button>
+        </div>
+        
+        <ul class="hidden mt-6 sm:flex sm:flex-col">
+            <li class="text-lg sm:text-2xl">
               <span>📰</span>
-              <a href="blog">
+              <a href="blog"  class="hover:underline">
                 <code>Blog</code>
               </a>
             </li>
-            <li>
+            <li class="text-lg sm:text-2xl">
               <span>👷</span>
-              <a href="projects">
+              <a href="projects" class="hover:underline">
                 <code>Projects</code>
               </a>
             </li>
           </ul>
-        </div>
-        <div>
-          <h4>A <a href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
-        </div>
       </div>
-    </section>
-    <section class="info-split">
-      <div class="card">
-        <slot />
-      </div>
-    </section>
-  </div>
-</main>
+      
+        <h4 class="mb-4">A <a class="italic underline" href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
+    </div>
+  </section>
+  <section class="bg-gray-200 info-split">
+    <div class="relative px-3 bg-gray-200 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 card">
+      {#if isMenuExpanded}
+        <ul class="absolute top-0 left-0 z-10 w-full px-3 py-4 border-b-2 border-black border-solid shadow-lg bg-theme">
+          <li class="text-xl">
+            <span>📰</span>
+            <a href="blog" class="hover:underline" on:click={toggleMenu}>
+              <code>Blog</code>
+            </a>
+          </li>
+          <li class="text-xl">
+            <span>👷</span>
+            <a href="projects" class="hover:underline" on:click={toggleMenu}>
+              <code>Projects</code>
+            </a>
+          </li>
+        </ul>
+      {/if}
+      <slot />
+    </div>
+  </section>
+</div>

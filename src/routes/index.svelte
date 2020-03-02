@@ -1,87 +1,48 @@
-<style>
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    font-size: 1.8em;
-  }
-
-  li > a {
-    text-decoration: none;
-  }
-
-  li > a:hover {
-    text-decoration-line: underline;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-
-  .about h1 {
-    font-size: 1.3em;
-  }
-
-  .about li {
-    font-size: 0.7em;
-  }
-
-  .about a {
-    text-decoration: underline;
-  }
-
-  .about > div {
-    flex: 1;
-  }
-</style>
 
 <svelte:head>
   <title>Fazz.Dev</title>
 </svelte:head>
 
-<h1 class="card-title">About</h1>
 
-<div class="about">
-  <div>
-    <h1>Me</h1>
+<div class="w-full px-3">
+  <h1 class="text-4xl font-bold sm:text-6xl">About</h1>
+
+<div class="inline-flex justify-between w-full">
+  <div class="flex flex-col">
+    <h1 class="text-4xl font-thin uppercase  sm:text-6xl">Me</h1>
     <ul>
-      <li>
+      <li class="text-lg">
         <h2>Joe Fazzino</h2>
       </li>
-      <li>
+      <li class="text-lg">
         <h2>Developer</h2>
       </li>
-      <li>
+      <li class="text-lg">
         <h2>London</h2>
       </li>
-      <li>
+      <li class="text-lg">
         <h2>70% Water</h2>
       </li>
     </ul>
   </div>
-  <div>
-    <h1>This</h1>
+  <div class="flex flex-col">
+    <h1 class="-ml-1 text-4xl font-thin uppercase sm:text-6xl">This</h1>
     <ul>
-      <li>
+      <li class="text-lg">
         <h2>My words</h2>
       </li>
-      <li>
+      <li class="text-lg">
         <h2>My creations</h2>
       </li>
-      <li>
+      <li class="text-lg">
         <h2>Made with Svelte 3</h2>
       </li>
-      <li>
+      <li class="text-lg">
         <a href="https://github.com/joefazz">
           <h2>Code here</h2>
         </a>
       </li>
     </ul>
   </div>
+</div>
 </div>

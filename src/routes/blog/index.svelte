@@ -12,72 +12,25 @@
   export let posts;
 </script>
 
-<style>
-  ul {
-    margin: 0 0 1em 0;
-    line-height: 1.5;
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    padding: 5px 5px;
-    border: 2px solid black;
-    background-color: white;
-    border-radius: 0px;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  a {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  p {
-    margin: 0;
-    font-size: 1rem;
-    color: grey;
-  }
-
-   h1 {
-     margin: 0;
-   }
-
-  .post-list {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .post-list > ul {
-    margin: 0;
-  }
-
-  .post-description {
-    color: black;
-  }
-</style>
-
 <svelte:head>
   <title>Blog | Fazz</title>
 </svelte:head>
 
-<h1 class="card-title">Recent posts</h1>
-<div class="post-list">
-  <ul>
-    {#each posts as post}
-      <!-- we're using the non-standard `rel=prefetch` attribute to
-          tell Sapper to load the data for the page as soon as
-          the user hovers over the link or taps it, instead of
-          waiting for the 'click' event -->
-      <li>
-        <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
-        <p class="post-description">{post.description}</p>
-        <p>{post.pubdate}</p>
-      </li>
-    {/each}
-  </ul>
+<div class="flex-col w-full py-2">
+  <h1 class="text-3xl font-bold">Recent posts</h1>
+  <div class="post-list">
+    <ul>
+      {#each posts as post}
+        <!-- we're using the non-standard `rel=prefetch` attribute to
+            tell Sapper to load the data for the page as soon as
+            the user hovers over the link or taps it, instead of
+            waiting for the 'click' event -->
+        <li class="px-4 py-2 mb-4 bg-gray-100 border-2 border-black border-solid">
+          <a class="text-lg font-bold underline" rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+          <p class="mb-1 tracking-tight">{post.description}</p>
+          <p class="text-sm italic">{post.pubdate}</p>
+        </li>
+      {/each}
+    </ul>
+  </div>
 </div>
