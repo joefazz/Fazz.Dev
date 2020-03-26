@@ -26,7 +26,7 @@
             the user hovers over the link or taps it, instead of
             waiting for the 'click' event -->
         <li class="px-4 py-2 mb-4 bg-gray-100 border-2 border-black border-solid">
-          <a class="text-lg font-bold underline" rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+          <a class="text-lg font-bold underline text-theme" rel="prefetch" href="blog/{post.slug}">{post.title}</a>
           <p class="mb-1 tracking-tight">{post.description}</p>
           <p class="text-sm italic">{post.pubdate}</p>
         </li>
