@@ -12,7 +12,7 @@
       <h2 class="text-2xl font-thin text-black uppercase">Web Engineer</h2>
     </span>
   </div>
-  <div class="w-full px-2 py-2 pb-4 my-4 border-2 border-black border-solid">
+  <div class="w-full px-2 py-2 pb-4 my-4 bg-white border-2 border-black border-solid">
     <p class="mb-2">
       Hi! Welcome to my blog/portfolio.
     </p>
