@@ -1,46 +1,28 @@
-<style>
-  ul {
-    height: 100%;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-    font-size: 1.1rem;
-    padding-bottom: 5px;
-  }
-</style>
-
 <svelte:head>
   <title>Projects | Fazz</title>
 </svelte:head>
 
-<h1 class="card-title">Projects</h1>
+<h1 class="text-3xl font-bold">Projects</h1>
 
-<p>
-  Click a project to see information about how it was build, where it lives and
-  any other info.
-</p>
-
-<ul>
-  <li>
-    <a href="/projects/codexe">CodeXE</a>
+<ul class="my-2">
+  <li class="p-2 mb-2 bg-white rounded shadow">
+    <a href="/projects/codexe" class="text-lg font-bold underline text-theme">CodeXE</a>
     -
     <b>BETA</b>
-    - A website for coding without installing tools
+    <p>A website for coding without installing tools</p>
   </li>
-  <li>
-    <a href="https://github.com/joefazz/react-native-web-starter" target="self">
+  <li class="p-2 mb-2 bg-white rounded shadow">
+    <a href="https://github.com/joefazz/react-native-web-starter" class="text-lg font-bold underline text-theme">
       React Native Web Starter
     </a>
     -
     <b>MAINTAINED</b>
-    - Jumping off point to dive into React Native Web
+    <p>Jumping off point to dive into React Native Web</p>
   </li>
-  <li>
-    <a href="/projects/flatmates">Flatmates</a>
+  <li class="p-2 mb-2 bg-white rounded shadow">
+    <a href="/projects/flatmates" class="text-lg font-bold underline text-theme">Flatmates</a>
     -
     <b>DECOMMISIONED</b>
-    - An app to help students find people to live with
+    <p>An app to help students find people to live with</p>
   </li>
 </ul>

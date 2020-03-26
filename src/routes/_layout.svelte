@@ -105,7 +105,6 @@ function toggleMenu() {
   @media (max-width: 778px) {
     .nav-split {
       flex: 0.14;
-      min-height: 70px;
       flex-direction: row;
     }
 
@@ -118,7 +117,7 @@ function toggleMenu() {
 
 <div class="flex-col main-split sm:flex-row">
   <section class="nav-split">
-    <div class="px-3 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 bg-theme card">
+    <div class="px-3 pt-1 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 bg-theme card">
       <div class="flex flex-col w-full">
         <div class="inline-flex items-center justify-between">
           <a href="/" style="text-decoration: none;">

@@ -26,12 +26,6 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
-	h1 {
-		padding: 0 10px;
-		text-decoration: underline;
-		text-align: center;
-		margin: 0.5em 0 0.5em 0;
-	}
 
 	.content {
 		max-width: 100%;
@@ -86,7 +80,7 @@
 	<title>{post.metadata.title} | Fazz</title>
 </svelte:head>
 
-<h1>{post.metadata.title}</h1>
+<h1 class="text-3xl font-bold uppercase">{post.metadata.title}</h1>
 
 <article class='content'>
 	{@html post.html}
