@@ -9,7 +9,7 @@
 
 <div class="inline-flex justify-between w-full">
   <div class="flex flex-col">
-    <h1 class="text-4xl font-thin uppercase  sm:text-6xl">Me</h1>
+    <h1 class="text-4xl font-thin uppercase sm:text-6xl">Me</h1>
     <ul>
       <li class="text-lg">
         <h2>Joe Fazzino</h2>
@@ -38,8 +38,8 @@
         <h2>Made with Svelte 3</h2>
       </li>
       <li class="text-lg">
-        <a href="https://github.com/joefazz">
-          <h2>Code here</h2>
+        <a href="https://github.com/joefazz" class="font-bold underline text-theme">
+          Code Here
         </a>
       </li>
     </ul>
