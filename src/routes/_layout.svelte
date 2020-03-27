@@ -118,15 +118,7 @@
 
 </style>
 
-{#if loader}
-<div class="flex items-center justify-around w-full h-full py-8 bg-gray-400">
-  <img src="/pic.jpg" alt="spinning loader" class="w-32 transition-all duration-500 transform border-4 border-solid rounded-full shadow-lg hover:rotate-180 border-theme">
-  <span class="flex flex-col items-center justify-between">
-    <span class="text-3xl font-bold uppercase">Please Hold the Line Caller...</span>
-    <span class="text-xl duration-1000 transition-opacity font-thin {slowLoad ? 'opacity-100' : 'opacity-0'} ">Your pageview is very important to us, you are the next pageview in the queue...</span>
-  </span>
-</div>
-{:else}
+
 <div class="flex-col main-split sm:flex-row">
   {#if !loader}
     <section class="nav-split">
@@ -181,4 +173,3 @@
     </div>
   </section>
 </div>
-{/if}
