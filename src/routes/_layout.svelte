@@ -1,11 +1,21 @@
 <script>
   import Tailwindcss from '../tailwindcss.svelte';
+  import { onMount } from 'svelte';
 
   let isMenuExpanded = false;
+  let loader = true;
+  let slowLoad = false;
 
-function toggleMenu() {
-  isMenuExpanded = !isMenuExpanded;
-}
+  onMount(() => {
+    loader = false;
+    setTimeout(() => {
+      slowLoad = true;
+    }, 200)
+  }) 
+  
+  function toggleMenu() {
+    isMenuExpanded = !isMenuExpanded;
+  }
 </script>
 
 <Tailwindcss />
@@ -115,6 +125,15 @@ function toggleMenu() {
 
 </style>
 
+<!-- {#if loader}
+<div class="flex items-center justify-around w-full h-full py-8 bg-gray-400">
+  <img src="/pic.jpg" alt="spinning loader" class="w-32 transition-all duration-500 transform border-4 border-solid rounded-full shadow-lg hover:rotate-180 border-theme">
+  <span class="flex flex-col items-center justify-between">
+    <span class="text-3xl font-bold uppercase">Please Hold the Line Caller...</span>
+    <span class="text-xl duration-1000 transition-opacity font-thin {slowLoad ? 'opacity-100' : 'opacity-0'} ">Your pageview is very important to us, you are the next pageview in the queue...</span>
+  </span>
+</div>
+{:else} -->
 <div class="flex-col main-split sm:flex-row">
   <section class="nav-split">
     <div class="px-3 pt-1 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 bg-theme card">
@@ -167,3 +186,4 @@ function toggleMenu() {
     </div>
   </section>
 </div>
+<!-- {/if} -->
