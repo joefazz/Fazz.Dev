@@ -1,3 +1,8 @@
+<script>
+  import Tailwindcss from '../tailwindcss.svelte';
+</script>
+
+<Tailwindcss />
 
 <svelte:head>
   <title>Fazz.Dev</title>
