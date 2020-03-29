@@ -46,16 +46,16 @@
       <p>
         I first got into coding when I was young trying to copy my dad who is also a Developer,
         the first language I learnt was Ruby on Codecademy. I got into JavaScript during a placement 
-        at a start up in the UK called <a href="https://fluid.work" class="underline text-theme">Fluid</a> 
+        at a start up in the UK called <a href="https://fluid.work" class="underline text-theme-darker">Fluid</a> 
         where I was tasked to develop and maintain their React Native codebase.
       </p>
       <p class="my-2">
-        Since then I graduated from university with a First and now work at <a href="https://gravitysketch.com" class="underline text-theme">Gravity Sketch</a>
-        on their cloud platform <a href="https://landingpad.me" class="underline text-theme">Landing Pad</a>
+        Since then I graduated from university with a First and now work at <a href="https://gravitysketch.com" class="underline text-theme-darker">Gravity Sketch</a>
+        on their cloud platform <a href="https://landingpad.me" class="underline text-theme-darker">Landing Pad</a>
       </p>
       <p class="my-2 mb-4">
         I enjoy doing public speaking and have done two technical talks, one at React London
-        on <i>React Native</i> <a href="https://www.youtube.com/watch?v=EFiDHJBVKyA" class="underline text-theme">(available to watch here)</a> and one at Google Developer Group doing a workshop and talk on
+        on <i>React Native</i> <a href="https://www.youtube.com/watch?v=EFiDHJBVKyA" class="underline text-theme-darker">(available to watch here)</a> and one at Google Developer Group doing a workshop and talk on
         <i>React</i>.
       </p>
       <div class="w-full text-center">

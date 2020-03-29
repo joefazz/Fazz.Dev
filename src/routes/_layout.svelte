@@ -127,7 +127,7 @@
           <a href="/" style="text-decoration: none;">
             <h1 class="text-4xl font-bold md:text-6xl">Fazz.Dev</h1>
           </a>
-          <button class="p-1 text-3xl border-2 border-black border-solid rounded cursor-pointer sm:hidden" on:click={toggleMenu}><img class="w-5" src="/hamburger.png" alt=""></button>
+          <button class="p-1 text-3xl border-2 border-black border-solid rounded cursor-pointer sm:hidden" on:click={toggleMenu} aria-label="navigation menu"><img aria-hidden="true" class="w-5" src="/hamburger.png" alt=""></button>
         </div>
         
         <ul class="hidden mt-6 sm:flex sm:flex-col">
