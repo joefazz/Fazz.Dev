@@ -55,7 +55,7 @@
       </p>
       <p class="my-2 mb-4">
         I enjoy doing public speaking and have done two technical talks, one at React London
-        on <i>React Native</i> (available to watch <a href="https://www.youtube.com/watch?v=EFiDHJBVKyA" class="underline text-theme">here</a>) and one at Google Developer Group doing a workshop and talk on
+        on <i>React Native</i> <a href="https://www.youtube.com/watch?v=EFiDHJBVKyA" class="underline text-theme">(available to watch here)</a> and one at Google Developer Group doing a workshop and talk on
         <i>React</i>.
       </p>
       <div class="w-full text-center">
