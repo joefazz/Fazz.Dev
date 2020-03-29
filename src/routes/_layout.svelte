@@ -120,37 +120,34 @@
 
 
 <div class="flex-col main-split sm:flex-row">
-  {#if !loader}
-    <section class="nav-split">
-      <div class="px-3 pt-1 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 bg-theme card">
-        <div class="flex flex-col w-full">
-          <div class="inline-flex items-center justify-between">
-            <a href="/" style="text-decoration: none;">
-              <h1 class="text-4xl font-bold md:text-6xl">Fazz.Dev</h1>
-            </a>
-            <button class="p-1 text-3xl border-2 border-black border-solid rounded cursor-pointer sm:hidden" on:click={toggleMenu}><img class="w-5" src="/hamburger.png" alt=""></button>
-          </div>
-          
-          <ul class="hidden mt-6 sm:flex sm:flex-col">
-              <li class="text-lg sm:text-2xl">
-                <span>📰</span>
-                <a href="blog"  class="hover:underline">
-                  <code>Blog</code>
-                </a>
-              </li>
-              <li class="text-lg sm:text-2xl">
-                <span>👷</span>
-                <a href="projects" class="hover:underline">
-                  <code>Projects</code>
-                </a>
-              </li>
-            </ul>
+  <section class="nav-split">
+    <div class="px-3 pt-1 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 bg-theme card">
+      <div class="flex flex-col w-full">
+        <div class="inline-flex items-center justify-between">
+          <a href="/" style="text-decoration: none;">
+            <h1 class="text-4xl font-bold md:text-6xl">Fazz.Dev</h1>
+          </a>
+          <button class="p-1 text-3xl border-2 border-black border-solid rounded cursor-pointer sm:hidden" on:click={toggleMenu}><img class="w-5" src="/hamburger.png" alt=""></button>
         </div>
         
-          <h4 class="mb-4">A <a class="italic underline" href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
+        <ul class="hidden mt-6 sm:flex sm:flex-col">
+            <li class="text-lg sm:text-2xl">
+              <span>📰</span>
+              <a href="blog"  class="hover:underline">
+                <code>Blog</code>
+              </a>
+            </li>
+            <li class="text-lg sm:text-2xl">
+              <span>👷</span>
+              <a href="projects" class="hover:underline">
+                <code>Projects</code>
+              </a>
+            </li>
+          </ul>
       </div>
-    </section>
-  {/if}
+      <h4 class="mb-4">A <a class="italic underline" href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
+    </div>
+  </section>
   <section class="bg-gray-200 info-split">
     <div class="relative px-3 bg-gray-200 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 card">
       {#if isMenuExpanded}
