@@ -21,7 +21,7 @@
 
 {#if loader}
   <div class="flex items-center justify-around w-full h-full py-8 bg-gray-400">
-    <img src="/pic.jpg" alt="spinning loader" class="w-32 transition-all duration-500 transform border-4 border-solid rounded-full shadow-lg hover:rotate-180 border-theme">
+    <img src="/pic.jpg" alt="spinning loader" class="w-32 h-32 transition-all duration-500 transform border-4 border-solid rounded-full shadow-lg hover:rotate-180 border-theme">
     <span class="flex flex-col items-center justify-between">
       <span class="text-3xl font-bold uppercase">Please Hold the Line Caller...</span>
       <span class="text-xl duration-1000 transition-opacity font-thin {slowLoad ? 'opacity-100' : 'opacity-0'} ">Your pageview is very important to us, you are the next pageview in the queue...</span>
@@ -30,7 +30,7 @@
 {:else}
   <div class="flex flex-col items-center w-full py-4">
     <div class="flex justify-between w-full p-2 m-auto bg-white border-2 border-black border-solid shadow md:justify-around">
-      <img src="/pic.jpg" class="w-24 border-2 border-solid rounded-full shadow-lg border-theme" alt="profile picture">
+      <img src="/pic.jpg" class="w-24 h-24 border-2 border-solid rounded-full shadow-lg border-theme" alt="profile picture">
       <span class="flex flex-col items-end justify-between md:items-center">
         <h1 class="text-3xl font-bold text-black">Joe Fazzino</h1>
         <h2 class="text-2xl font-thin text-black uppercase">Web Engineer</h2>
