@@ -1,6 +1,6 @@
 ---
 title: The Perfect Form
-published: true
+published: false
 description: How to make one of the worst parts of frontend development slightly easier
 tags: react, typescript, xstate
 pubdate: 2020-03-31
