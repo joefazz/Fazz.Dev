@@ -51,6 +51,7 @@
 		white-space: pre-wrap;
 		color: black;
 		padding: 0;
+		font-size: 0.9rem;
 	}
 
 	.content :global(ul) {
@@ -62,8 +63,13 @@
 	}
 
 	.content :global(p) {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin-top: 0;
+	}
+
+	.content :global(p)::before {
+		content: "\A";
+		white-space: pre;
 	}
 
 	.content :global(img) {
@@ -72,8 +78,11 @@
 
 	.content :global(blockquote) {
 		font-weight: bold;
-		font-style: italic
+		font-style: italic;
+		padding: 0 0.2rem;
+		padding-left: 0.5rem;
 	}
+
 </style>
 
 <svelte:head>
