@@ -107,7 +107,7 @@ We still haven't even started to cover the neccessary things like loading states
 
 Without putting another 16 code snippets in here I think you can see how with every extra input and every unit of business logic/client side validation we need to provide this is going to become unwieldy at best and unmaintainable at worst. Not to mention that writing all of this code is absolutely not helping you become a better developer or letting you focus on solving the more fun problems!
 
-If you think that I'm projecting my own opinions here on how badly I rate this process I refer (as we all should) to the React docs...
+If you think that I'm projecting my own opinions here on how badly I rate this process I refer (as we all should) to the holy scripture, the React docs...
 
 > It can sometimes be tedious to use controlled components, because you need to write an event handler for every way your data can change and pipe all of the input state through a React component. This can become particularly annoying when you are converting a preexisting codebase to React, or integrating a React application with a non-React library. In these situations, you might want to check out uncontrolled components, an alternative technique for implementing input forms.
 
