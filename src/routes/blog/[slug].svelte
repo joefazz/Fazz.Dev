@@ -51,7 +51,7 @@
 		white-space: pre-wrap;
 		color: black;
 		padding: 0;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 
 	.content :global(ul) {
@@ -79,8 +79,14 @@
 	.content :global(blockquote) {
 		font-weight: bold;
 		font-style: italic;
+		font-size: 0.8rem;
 		padding: 0 0.2rem;
 		padding-left: 0.5rem;
+	}
+
+	.content :global(a) {
+		color: indianred;
+		text-decoration-line: underline;
 	}
 
 </style>
