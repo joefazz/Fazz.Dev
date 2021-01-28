@@ -36,6 +36,11 @@
 		font-weight: 500;
 	}
 
+	.content :global(h2):not(:first-child)::before {
+		content: '\A';
+		white-space: pre;
+	}
+
 	.content :global(pre) {
 		background-color: rgb(224, 224, 224);
 		box-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);
@@ -54,8 +59,14 @@
 		font-size: 0.8rem;
 	}
 
+
 	.content :global(ul) {
 		line-height: 1.5;
+	}
+
+	.content :global(ul)::before {
+		content: '\A';
+		white-space: pre;
 	}
 
 	.content :global(li) {
