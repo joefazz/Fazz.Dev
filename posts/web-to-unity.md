@@ -1,8 +1,8 @@
 ---
 title: Web Development vs Game Development
-published: false
+published: true
 description: 3.2.1. FIGHT!
-pubdate: 2020-10-03
+pubdate: 2021-01-03
 ---
 
 ## Who is this post for?
@@ -28,7 +28,7 @@ A small list of reasons I like web development:
 - There is so much information online about how to do almost everything there's almost never such a thing as an original problem so help is almost always a Google search away
 - I know how to do it and I like making websites
 
-> Editors note (still me): While writing this post on my blog that I over engineered everything was being incredibly slow and I was getting progressively more irritated so web dev still knows how to toy with me despite how much I like it.
+> Editors note (still me): While writing this post on my blog (that I over engineered) everything was being incredibly slow and I was getting progressively more irritated so web dev still knows how to toy with me despite how much I like it.
 
 ## Game Development
 
@@ -38,7 +38,6 @@ I suppose I should start this by prefacing with my job title not actually having
 
 There's going to be a few of words and definitions that need to be described in order to explore the similarities and differences between creating UI for Unity projects vs React projects.
 
-- **MonoBehaviours** are the base class from which every Unity script (and component) derives. They contain lifecycle methods similar to React class components (with some distinct differences). They also allow you to create member variables that can drive UI creating something close to state in React.
 - **GameObjects** is the base class for all Unity entities that are in the scene. GameObjects are just containers for components and will always have a transform component (2D or 3D depending on usage) that tell the rendering engine where the entity is in the world. GameObjects are hierarchical like DOM elements in the way they have a parent GameObject and can have many siblings/children.
 - (Unity) **Components** are scripts that attach to GameObjects to give them special functionality, for example to display a 2D image you need to attach the `Image` component to your GameObject which will in turn have lots of additional property fields that let you select the colour of the image, the sprite to use etc.
 - **Prefabs** are reusable collections of GameObjects that are saved to the disk with the .prefab extension and can be either drag and dropped into a scene or Instantiated through the code. You can have prefabs within prefabs but unless you edit them at their root you won't change all the other instances of the prefab.
@@ -73,7 +72,7 @@ Unity is far more... turbulent, it can feel as rapid as possible like in the abo
 
 Times where you can really drag though do occur thick and fast especially when you're trying to plug in business logic via Scripts. To undersell Unity a bit, it's a glorified compiler, this means that when you're editing code in your editor of choice (VSCode works way better than it has any right to imo) it doesn't compile until Unity realises you have changed one of the files in the solution and sometimes it can be quite tedious waiting for it to compile and hearing your laptop fan kick up, especially when you're just changing a single value to see the effect it has on physics (there are ways to mitigate this). Resolving conflicts in prefabs is also basically a no go and you need to fix it by visually comparing the two which is not that straightforward.
 
-Another fact of the matter is that Unity is a Game Engine and the rule of thumb (that I was told) is that if you want to make a game your hardware should be twice as powerful as the lowest end device you want to target. The new M1 MacBook Air's might be the new web dev laptop of choice but unless you have a discrete GPU in your laptop you're going to struggle with shaders and real time lighting.
+Another fact of the matter is that Unity is a Game Engine and the rule of thumb (that I was told) is that if you want to make a game your hardware should be twice as powerful as the lowest end device you want to target. The new M1 MacBook Air's might be the new web dev laptop of choice but unless you have a discrete GPU in your laptop you're going to struggle with complex shaders and real time lighting.
 
 ## The Future of Unity UI
 

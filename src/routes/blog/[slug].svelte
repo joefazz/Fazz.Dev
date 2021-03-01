@@ -31,14 +31,19 @@
 		max-width: 100%;
 	}
 
-	.content :global(h2) {
+	.content :global(h2, h3) {
 		font-size: 1.4em;
 		font-weight: 500;
 	}
 
-	.content :global(h2):not(:first-child)::before {
+	.content :global(h2, h3):not(:first-child)::before {
 		content: '\A';
 		white-space: pre;
+	}
+
+	.content :global(h3) {
+		font-size: 1.2em;
+		font-weight: 400;
 	}
 
 	.content :global(pre) {
