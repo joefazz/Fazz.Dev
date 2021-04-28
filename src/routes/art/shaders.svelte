@@ -2,22 +2,35 @@
   <title>Shaders | Fazz</title>
 </svelte:head>
 
-<h1 class="text-3xl font-bold">CodeXE</h1>
+<h1 class="text-3xl font-bold">Shaders</h1>
 <article>
-<span class="flex flex-row items-center justify-between">
-  <h2 class="text-xl font-thin uppercase">Code in the browser</h2>
-  <a href="https://codexe.run" target="self" class="text-lg underline text-theme">Link</a>
-</span>
-
   <p class="my-2">
-    Next.js application built for my final year project of university. Gives
-    each user their own private coding environment to play with/break.
+    Shaders are one of those concepts that I was pretty convinced I would never actually understand and only people
+    far more intelligent than me (the shader magi) would be able to create something amazing with them. It turns
+    out that (shockingly (not)) this is not the case and actually, for me it's turned into a bit of a gateway drug
+    into wanted to learn more about how graphics and rendering actually works.
   </p>
 
   <p class="my-2">
-    Project was created with Next.js, React.js, Styled Components, Docker and
-    Node.js.
+    The first shader I wrote was with Three.js following along to a Creative Coding course on Frontend Masters by
+    Matt Desel (fix the name). I would be lying if I said I understood every line I wrote and even now I look back 
+    over it and have to remind myself of the purpose of certain lines. However it is something I'm quite proud of 
+    and even though lines of code wise it's fairly simple, the effect is quite impressive and something I find really
+    satisfying to have made.
   </p>
+
+
+  <p class="my-2">
+    Since working in Unity naturally any shaders I get to write in my day to day are going to be for Unity's materials.
+    At the time of writing I've only had to do one shader while at GS which was to create a 2D color disc which was far 
+    more interesting then it might seem. Since then though I've been trying to find time to experiment with more shaders
+    that are focused on games so below is my inaugeral water shader which was the first time I had really tried using
+    ShaderGraph in anger. I'm actually really happy with the result but would like to go further to fix things like the 
+    shadow distortion and making it look less 'voronoi'.
+  </p>
+
+  
+
 
   <b>Features</b>
   <ul>

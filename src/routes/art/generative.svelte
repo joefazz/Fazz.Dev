@@ -2,53 +2,20 @@
   <title>Generative Art | Fazz</title>
 </svelte:head>
 
-<h1 class="text-3xl font-bold">CodeXE</h1>
+<h1 class="text-3xl font-bold">Generative Art</h1>
 <article>
-<span class="flex flex-row items-center justify-between">
-  <h2 class="text-xl font-thin uppercase">Code in the browser</h2>
-  <a href="https://codexe.run" target="self" class="text-lg underline text-theme">Link</a>
-</span>
-
   <p class="my-2">
-    Next.js application built for my final year project of university. Gives
-    each user their own private coding environment to play with/break.
+    I consider my journey into Generative Art to be one of the first things to spark in me that I could use
+    computers, not just to make useful software, but to make useless art which I think we can all agree is 
+    far more interesting.
   </p>
 
   <p class="my-2">
-    Project was created with Next.js, React.js, Styled Components, Docker and
-    Node.js.
+    It feels difficult to try and describe what I like about this without sounding pretentious but I think what
+    really appeals to me is the fact that computers are bad at creating mess and when you try to encourage it to
+    do so you can end up with really striking visuals that it feels only a computer could make.  Bugs in the code 
+    can become more than just a headache to fix they can accidentally create something you never intended to make. 
   </p>
 
-  <b>Features</b>
-  <ul>
-    <li class="my-1 italic">- Private coding environment using containers</li>
-    <li class="my-1 italic">- Monaco code editing experience</li>
-    <li class="my-1 italic">- Support for JavaScript, Python and C++ compilation</li>
-    <li class="my-1 italic">- Ability to create and perform exercises ala Codecademy</li>
-  </ul>
-
-  <p class="my-2">
-    This project only has a deployed frontend no backend support is deployed, although cloning 
-    the repo and running it alongside the frontend should work.
-  </p>
-
-  <p class="my-2">
-    I also wrote a ~15 thousand word dissertation on this project available for
-    perusing.
-  </p>
-
-  <p class="links">
-    <a href="https://github.com/joefazz/CodeXE" target="self">
-      <code>Frontend</code>
-    </a>
-     - 
-     <a href="https://github.com/joefazz/Midgard" target="self">
-      <code>Backend</code>
-    </a>
-     - <a
-      href="https://github.com/joefazz/FYP_Report/blob/master/thesis.pdf"
-      target="self">
-      <code>Dissertation</code>
-    </a>
-  </p>
+  <h2>Gallery</h2>
 </article>
