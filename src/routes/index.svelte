@@ -44,14 +44,14 @@
         alt="profile picture" />
       <span class="flex flex-col items-end justify-between md:items-center">
         <h1 class="text-3xl font-bold text-black">Joe Fazzino</h1>
-        <h2 class="text-2xl font-thin text-black uppercase">UI Engineer</h2>
+        <h2 class="text-2xl font-thin text-black uppercase">Software Engineer</h2>
       </span>
     </div>
     <div class="w-full px-2 py-2 pb-4 my-4 bg-white border-2 border-black border-solid">
       <p class="mb-2">
         Hi! 👋 I'm Joe, a
         <strike>Web Engineer</strike>
-        <b>UI Engineer</b> based in London, UK.
+        <b>Unity/C# Engineer</b> based in London, UK.
       </p>
       <p>
         I first got into coding when I was young trying to copy my dad who is also a Developer, the
@@ -65,7 +65,7 @@
         Since then I graduated from University of Reading with a First and now work at <a
           href="https://gravitysketch.com"
           class="underline text-theme-darker">Gravity Sketch</a> working with <b>Unity</b> and <b>C#</b>
-        everyday across various projects giving the UI the ol' <b>Razzle Dazzle</b> ✨. Before that I
+        everyday across various projects most notably the recent release of <a class="underline text-theme-darker" href="https://www.gravitysketch.com/blog/articles/gravity-sketch-ipad-app-launch/">Gravity Sketch iPad</a>. Before that I
         worked on their cloud platform <a
           class="underline text-theme-darker"
           href="https://landingpad.me">Landing Pad</a> as the companies first Web Engineer hire.

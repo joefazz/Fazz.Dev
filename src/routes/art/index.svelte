@@ -2,53 +2,21 @@
   <title>Art | Fazz</title>
 </svelte:head>
 
-<h1 class="text-3xl font-bold">CodeXE</h1>
-<article>
-<span class="flex flex-row items-center justify-between">
-  <h2 class="text-xl font-thin uppercase">Code in the browser</h2>
-  <a href="https://codexe.run" target="self" class="text-lg underline text-theme">Link</a>
-</span>
+<h1 class="text-3xl font-bold">Art</h1>
 
-  <p class="my-2">
-    Next.js application built for my final year project of university. Gives
-    each user their own private coding environment to play with/break.
-  </p>
-
-  <p class="my-2">
-    Project was created with Next.js, React.js, Styled Components, Docker and
-    Node.js.
-  </p>
-
-  <b>Features</b>
-  <ul>
-    <li class="my-1 italic">- Private coding environment using containers</li>
-    <li class="my-1 italic">- Monaco code editing experience</li>
-    <li class="my-1 italic">- Support for JavaScript, Python and C++ compilation</li>
-    <li class="my-1 italic">- Ability to create and perform exercises ala Codecademy</li>
-  </ul>
-
-  <p class="my-2">
-    This project only has a deployed frontend no backend support is deployed, although cloning 
-    the repo and running it alongside the frontend should work.
-  </p>
-
-  <p class="my-2">
-    I also wrote a ~15 thousand word dissertation on this project available for
-    perusing.
-  </p>
-
-  <p class="links">
-    <a href="https://github.com/joefazz/CodeXE" target="self">
-      <code>Frontend</code>
+<ul class="my-2">
+  <li class="p-2 mb-2 bg-white border-2 border-black border-solid">
+    <a href="/art/generative" class="text-lg font-bold underline text-theme">Generative Art</a>
+    <p>Using a computer to create strangly artificial and interesting images</p>
+  </li>
+  <li class="p-2 mb-2 bg-white border-2 border-black border-solid">
+    <a href="/art/shaders" class="text-lg font-bold underline text-theme">
+      Shaders
     </a>
-     - 
-     <a href="https://github.com/joefazz/Midgard" target="self">
-      <code>Backend</code>
-    </a>
-     - <a
-      href="https://github.com/joefazz/FYP_Report/blob/master/thesis.pdf"
-      target="self">
-      <code>Dissertation</code>
-    </a>
-  </p>
-</article>
+    <p>Magic</p>
+  </li>
+  <li class="p-2 mb-2 bg-white border-2 border-black border-solid">
+    <a href="/art/blender" class="text-lg font-bold underline text-theme">Blender</a>
+    <p>Learning Blender just for fun</p>
+  </li>
+</ul>

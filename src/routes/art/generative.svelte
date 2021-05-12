@@ -17,5 +17,21 @@
     can become more than just a headache to fix they can accidentally create something you never intended to make. 
   </p>
 
-  <h2>Gallery</h2>
+  <h1 class="text-3xl font-bold">Gallery</h1>
+  <figure>
+    <img class="border-black border-4" src="/genart/circles.png" alt="circles" />
+    <figcaption class="italic font-thin">Random</figcaption>
+  </figure>
+  <figure >
+    <img class="mt-4 border-black border-4" src="/genart/equals.png" alt="equals" />
+    <figcaption class="italic font-thin">Equal</figcaption>
+  </figure>
+  <figure>
+    <img class="mt-4 border-black border-4" src="/genart/gradient.png" alt="Gradient" />
+    <figcaption class="italic font-thin">Gradient</figcaption>
+  </figure>
+  <figure >
+    <img class="mt-4 border-black border-4" src="/genart/degenerative.png" alt="Degenerative" />
+    <figcaption class="italic font-thin">Degenerative Art</figcaption>
+  </figure>
 </article>

@@ -21,7 +21,26 @@
     rather than just blindly following until I got to the output.
   </p>
 
-  <h2>Gallery</h2>
-
+  <h1 class="text-3xl font-bold">Gallery</h1>
+  <figure>
+    <img class="border-black border-4" src="/blender/composed-shot.png" alt="donut and coffee" />
+    <figcaption class="italic font-thin">Donut and Coffee</figcaption>
+  </figure>
+  <figure>
+    <img class="mt-4 border-black border-4" src="/blender/coffee-improved.png" alt="Coffee" />
+    <figcaption class="italic font-thin">Coffee</figcaption>
+  </figure>
+  <figure>
+    <img class="mt-4 border-black border-4" src="/blender/chair.png" alt="chair" />
+    <figcaption class="italic font-thin">Chair</figcaption>
+  </figure>
+  <figure >
+    <img class="mt-4 border-black border-4" src="/blender/compositedshot-couch.png" alt="Couch" />
+    <figcaption class="italic font-thin">Couch</figcaption>
+  </figure>
+  <figure >
+    <img class="mt-4 border-black border-4" src="/blender/cushions.png" alt="Cushions" />
+    <figcaption class="italic font-thin">Cushion Close Up (Material by <a class="underline text-theme-darker" href="https://artstation.com/emilybisset">Emily Bisset</a>)</figcaption>
+  </figure>
 
 </article>
