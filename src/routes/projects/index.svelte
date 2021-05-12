@@ -7,22 +7,16 @@
 <ul class="my-2">
   <li class="p-2 mb-2 bg-white border-2 border-black border-solid">
     <a href="/projects/codexe" class="text-lg font-bold underline text-theme">CodeXE</a>
-    -
-    <b>BETA</b>
     <p>A website for coding without installing tools</p>
   </li>
   <li class="p-2 mb-2 bg-white border-2 border-black border-solid">
     <a href="https://github.com/joefazz/react-native-web-starter" class="text-lg font-bold underline text-theme">
       React Native Web Starter
     </a>
-    -
-    <b>MAINTAINED</b>
     <p>Jumping off point to dive into React Native Web</p>
   </li>
   <li class="p-2 mb-2 bg-white border-2 border-black border-solid">
     <a href="/projects/flatmates" class="text-lg font-bold underline text-theme">Flatmates</a>
-    -
-    <b>DECOMMISIONED</b>
     <p>An app to help students find people to live with</p>
   </li>
 </ul>
