@@ -65,7 +65,8 @@
 		margin-bottom: 10px;
 		max-width: 100%;
 		background-color: white;
-		border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
 		box-shadow: 0px 0px 20px gray;
   }
 
@@ -151,7 +152,7 @@
             </li> 
           </ul>
       </div>
-      <div class="flex justify-between items-center">
+      <div class="hidden md:flex w-full justify-between items-center">
         <h4 class="mb-4">A <a class="italic underline" href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
           <a href="https://github.com/joefazz" class="flex mb-4" target="_blank">
             <svg viewBox="0 0 16 16" width="32" height="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
@@ -160,9 +161,9 @@
     </div>
   </section>
   <section class="bg-gray-200 info-split">
-    <div class="relative px-3 bg-gray-200 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 card">
+    <div class="relative px-3  py-4 bg-gray-200 border-b-2 border-black border-solid sm:border-r-4 sm:border-0 xl:border-4 card">
       {#if isMenuExpanded}
-        <ul class="absolute top-0 left-0 z-10 w-full px-3 py-4 border-b-2 border-black border-solid shadow-lg bg-theme">
+        <ul class="absolute top-0 left-0 z-10 w-full px-3 pt-4 border-b-2 border-black border-solid shadow-lg bg-theme">
           <li class="text-xl">
             <span>📰</span>
             <a href="blog" class="hover:underline" on:click={toggleMenu}>
@@ -181,6 +182,12 @@
               <code>Art</code>
             </a>
           </li>
+          <div class="flex w-full mt-4 justify-between items-center">
+            <h4 class="mb-4">A <a class="italic underline" href="https://twitter.com/purefazz">Joe Fazzino</a> Production</h4>
+            <a href="https://github.com/joefazz" class="flex mb-4" target="_blank">
+              <svg viewBox="0 0 16 16" width="32" height="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </a>
+          </div>
         </ul>
       {/if}
       <slot />
