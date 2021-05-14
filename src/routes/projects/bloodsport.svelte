@@ -25,6 +25,4 @@
     <li class="my-1 italic">- Using NavMeshAgents for an Enemy AI</li>
   </ul>
 
-  <video source="/game/sneakycar.mp4" controls />
-
 </article>
